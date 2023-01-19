@@ -4,13 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginTop="20dp"
+    android:layout_marginHorizontal="20dp"
     tools:context=".Fragments.BerandaFragment">
 
-    <!-- Search Bar Container -->
+    <!--===== Search Bar Section =====-->
     <LinearLayout
         android:id="@+id/searchBarContainer"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:orientation="horizontal"
         >
 
@@ -56,6 +57,7 @@
             android:layout_gravity="center_vertical"
             >
 
+            <!-- User Image -->
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/userImage"
                 android:src="@drawable/user"
@@ -63,6 +65,7 @@
                 android:theme="@style/roundedImageViewRounded"
                 android:layout_height="40dp" />
 
+            <!-- User Badge -->
             <ImageView
                 android:id="@+id/batchUser"
                 android:layout_alignBottom="@id/userImage"
@@ -74,5 +77,156 @@
         </RelativeLayout>
 
     </LinearLayout>
+
+    <!--===== Banner And Service Section =====-->
+    <RelativeLayout
+        android:id="@+id/bannerAndServiceContainer"
+        android:layout_below="@id/searchBarContainer"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/border_banner"
+        >
+
+        <!-- Info Gopay -->
+        <LinearLayout
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_gopay"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="57dp"
+                android:layout_height="14dp"
+                android:src="@drawable/gopay_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp. 12.379"
+                android:textColor="#1D1D1D"
+                android:textSize="16dp"
+                android:fontFamily="@font/sfpro_bold"
+                android:layout_marginTop="2dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Klik &amp; Cek Riwayat"
+                android:textColor="#0C9B16"
+                android:fontFamily="@font/sfpro_medium"
+                android:textSize="12.5dp"
+                android:layout_marginTop="2dp"
+                />
+
+        </LinearLayout>
+
+        <!-- Services -->
+        <LinearLayout
+            android:id="@+id/serviceContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="5dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/btnBayar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="21dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_bayar"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bayar"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/sfpro_medium"
+                    android:layout_marginTop="7dp"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnTopUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="21dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_top_up"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Top Up"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/sfpro_medium"
+                    android:textSize="14dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnExplore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="21dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_explore"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Explore"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/sfpro_medium"
+                    android:textSize="14dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
 
 </RelativeLayout>
