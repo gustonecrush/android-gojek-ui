@@ -1,16 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
     tools:context=".Fragments.BerandaFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <!-- Search Bar Container -->
+    <LinearLayout
+        android:id="@+id/searchBarContainer"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textSize="200dp"
-        android:textColor="@color/green_primary"
-        android:text="TEST" />
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
 
-</FrameLayout>
+        <!-- Search Input & Logo Section -->
+        <LinearLayout
+            android:id="@+id/searchInputAndLogoSection"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/border_search_tab"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <!-- Logo -->
+            <ImageView
+                android:id="@+id/iconSearch"
+                android:layout_width="16.8dp"
+                android:layout_height="16.8dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_search" />
+
+            <!-- Search Input -->
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="#FAFAFA"
+                android:fontFamily="@font/sfpro_regular"
+                android:hint="Cari layanan, makanan, &amp; tujuan"
+                android:lineHeight="17px"
+                android:textColor="@color/gray"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <!-- User Profile -->
+        <RelativeLayout
+            android:id="@+id/userContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/userImage"
+                android:src="@drawable/user"
+                android:layout_width="40dp"
+                android:theme="@style/roundedImageViewRounded"
+                android:layout_height="40dp" />
+
+            <ImageView
+                android:id="@+id/batchUser"
+                android:layout_alignBottom="@id/userImage"
+                android:layout_alignRight="@id/userImage"
+                android:src="@drawable/batch_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
