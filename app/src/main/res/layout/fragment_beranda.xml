@@ -229,4 +229,264 @@
 
     </RelativeLayout>
 
+    <!--===== Menus Section =====-->
+    <LinearLayout
+        android:id="@+id/menuContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/bannerAndServiceContainer"
+        android:layout_marginTop="32dp"
+        >
+
+        <!--===== Menus 1 =====-->
+        <LinearLayout
+            android:id="@+id/menuOneContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            >
+
+            <LinearLayout
+                android:id="@+id/goRide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginRight="53dp"
+                >
+
+                <ImageView
+                    android:id="@+id/goRideLogo"
+                    android:src="@drawable/goride"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Go Ride"
+                    android:textColor="@color/menu_text"
+                    android:textSize="12.5dp"
+                    android:fontFamily="@font/sfpro_regular"
+                    android:layout_marginTop="9dp"
+                    android:lineHeight="14.92dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/goCar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginRight="53dp"
+                >
+
+                <ImageView
+                    android:id="@+id/goCarLogo"
+                    android:src="@drawable/gocar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Go Car"
+                    android:textColor="@color/menu_text"
+                    android:textSize="12.5dp"
+                    android:fontFamily="@font/sfpro_regular"
+                    android:layout_marginTop="9dp"
+                    android:lineHeight="14.92dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/goFood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginRight="53dp"
+                >
+
+                <ImageView
+                    android:id="@+id/goFoodLogo"
+                    android:src="@drawable/gofood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Go Food"
+                    android:textColor="@color/menu_text"
+                    android:textSize="12.5dp"
+                    android:fontFamily="@font/sfpro_regular"
+                    android:layout_marginTop="9dp"
+                    android:lineHeight="14.92dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/goSend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:id="@+id/goSendLogo"
+                    android:src="@drawable/goride"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Go Send"
+                    android:textColor="@color/menu_text"
+                    android:textSize="12.5dp"
+                    android:fontFamily="@font/sfpro_regular"
+                    android:layout_marginTop="9dp"
+                    android:lineHeight="14.92dp"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--===== Menus 2 =====-->
+        <LinearLayout
+            android:id="@+id/menuTwoContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="29dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/goMart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginRight="53dp"
+                >
+
+                <ImageView
+                    android:id="@+id/goMartLogo"
+                    android:src="@drawable/gomart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Go Mart"
+                    android:textColor="@color/menu_text"
+                    android:textSize="12.5dp"
+                    android:fontFamily="@font/sfpro_regular"
+                    android:layout_marginTop="9dp"
+                    android:lineHeight="14.92dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/goPulsa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginRight="53dp"
+                >
+
+                <ImageView
+                    android:id="@+id/goPulsaLogo"
+                    android:src="@drawable/gopulsa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Go Pulsa"
+                    android:textColor="@color/menu_text"
+                    android:textSize="12.5dp"
+                    android:fontFamily="@font/sfpro_regular"
+                    android:layout_marginTop="9dp"
+                    android:lineHeight="14.92dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/goClub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginRight="53dp"
+                >
+
+                <ImageView
+                    android:id="@+id/goClubLogo"
+                    android:src="@drawable/goclub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Go Club"
+                    android:textColor="@color/menu_text"
+                    android:textSize="12.5dp"
+                    android:fontFamily="@font/sfpro_regular"
+                    android:layout_marginTop="9dp"
+                    android:lineHeight="14.92dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lainnya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:id="@+id/lainnyaLogo"
+                    android:src="@drawable/lainnya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lainnya"
+                    android:textColor="@color/menu_text"
+                    android:textSize="12.5dp"
+                    android:fontFamily="@font/sfpro_regular"
+                    android:layout_marginTop="9dp"
+                    android:lineHeight="14.92dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
 </RelativeLayout>
