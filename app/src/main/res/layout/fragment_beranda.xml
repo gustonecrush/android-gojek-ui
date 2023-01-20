@@ -489,4 +489,80 @@
 
     </LinearLayout>
 
+    <!--===== XP Section =====-->
+    <RelativeLayout
+        android:id="@+id/xpContainer"
+        android:layout_below="@id/menuContainer"
+        android:layout_width="match_parent"
+        android:layout_marginTop="19dp"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="5dp"
+        android:background="@drawable/xp_linear"
+        android:elevation="1dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:translationZ="1dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/go_club_for_xp"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginRight="45dp"
+                >
+
+                <TextView
+                    android:id="@+id/xpState"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="117 XP lagi ada Harta Karun"
+                    android:lineHeight="16.71dp"
+                    android:fontFamily="@font/sfpro_bold"
+                    android:textSize="14dp"
+                    android:textColor="#1D1D1D"
+                    android:letterSpacing="0.05"
+                    />
+
+                <ImageView
+                    android:layout_width="209dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/progress"
+                    />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_next"
+                android:layout_gravity="center"
+                />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="65dp"
+            android:src="@drawable/background_dots"
+            android:layout_alignParentLeft="true"
+            />
+
+    </RelativeLayout>
+
 </RelativeLayout>
